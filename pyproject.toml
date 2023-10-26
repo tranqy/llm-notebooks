@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "ollama-local"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+litellm = "^0.11.1"
+openai = "^0.28.1"
+langchain = "^0.0.320"
+pyautogen = "^0.1.13"
+jupyter = "^1.0.0"
+docker = "^6.1.3"
+huggingface = "^0.0.1"
+transformers = {extras = ["torch"], version = "^4.34.1"}
+torch = ">=2.0.0, !=2.0.1, !=2.1.0"
+replicate = "^0.15.4"
+google-generativeai = "^0.2.2"
+pypdf = "^3.16.4"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.26.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
